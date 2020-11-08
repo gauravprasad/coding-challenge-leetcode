@@ -6,14 +6,13 @@
 package com.gprasad.leetcode.algorithms.easy;
 
 /**
- *
  * @author gq6pras
  */
 public class ReverseInteger {
 
-    long reverse = 0;
+    static long reverse = 0;
 
-    public int reverse(int x) {
+    public static int reverse(int x) {
 
         if (x < 10 && x > -10) {
             reverse = reverse * 10 + x;
@@ -31,4 +30,18 @@ public class ReverseInteger {
         return (int) reverse;
     }
 
+    public static int reverseW(int x) {
+        long r = 0l;
+        while (Math.abs(x) > 0) {
+            r = r * 10l + Long.valueOf(x % 10);
+            x /= 10;
+        }
+        return r==(int)r?(int)r:0;
+    }
+
+    public static void main(String[] args) {
+        int input = 2147483647;
+        System.out.println(reverse(input));
+        System.out.println(reverseW(input));
+    }
 }

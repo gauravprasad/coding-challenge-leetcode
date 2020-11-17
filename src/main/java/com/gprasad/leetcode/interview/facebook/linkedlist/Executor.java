@@ -16,6 +16,9 @@ public class Executor {
         printList(addTwoNumbers.addTwoNumbers(getList1(), getList2()));
         printList(addTwoNumbers.addTwoNumbers(getList3(), getList4()));
 
+        MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
+        printList(mergeTwoSortedLists.mergeTwoLists(getList1(),getList2()));
+
     }
     private static ListNode getList1(){
         ListNode ln2 = new ListNode(4);

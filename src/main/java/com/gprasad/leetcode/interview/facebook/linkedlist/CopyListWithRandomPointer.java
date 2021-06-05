@@ -31,7 +31,7 @@ public class CopyListWithRandomPointer {
             copyTraversal = newNode;
             head = head.next;
         }
-        System.out.println();;
+        System.out.println();
         return deepCopy.next;
     }
 }

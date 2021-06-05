@@ -5,7 +5,7 @@ public class IntegerToRoman {
     String[] symbols = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
 
     String[] thousands  = {"","M","MM","MMM"};
-    String[] hundereds  = {"","C", "CC","CCC","CD","D","DC","DCC","DCCC","CM"};
+    String[] hundreds = {"","C", "CC","CCC","CD","D","DC","DCC","DCCC","CM"};
     String[] tens  = {"", "X","XX","XXX","XL", "L", "LX", "LXX", "LXXX", "XC"};
     String[] ones  = {"", "I","II","III","IV", "V", "VI","VII","VIII","IX"};
 
@@ -21,6 +21,6 @@ public class IntegerToRoman {
     }*/
 
     public String intToRoman(int num) {
-        return thousands[num/1000]+hundereds[(num%1000)/100]+tens[(num%100)/10]+ones[num%10];
+        return thousands[num/1000]+ hundreds[(num%1000)/100]+tens[(num%100)/10]+ones[num%10];
     }
 }

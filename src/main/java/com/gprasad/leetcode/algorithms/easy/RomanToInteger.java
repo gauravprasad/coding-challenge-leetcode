@@ -1,6 +1,5 @@
 package com.gprasad.leetcode.algorithms.easy;
 
-import scala.Int;
 
 public class RomanToInteger {
     public static void main(String[] args) throws Exception {

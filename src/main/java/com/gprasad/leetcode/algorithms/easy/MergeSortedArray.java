@@ -10,8 +10,21 @@ package com.gprasad.leetcode.algorithms.easy;
  * @author gq6pras
  */
 public class MergeSortedArray {
-    public void soultion(int[] nums1, int m, int[] nums2, int n)
-    {
-       
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int mi=0,ni=0;
+        while(mi<m){
+            if(nums1[mi]>=nums2[ni]){
+                int temp = nums1[mi];
+                nums1[mi] = nums2[ni];
+                nums2[ni] = temp;
+            }else ni++;
+            mi++;
+        }
+        ni = 0;
+        while(mi<nums1.length){
+            nums1[mi] = nums2[ni];
+            ni++;
+            mi++;
+        }
     }
 }

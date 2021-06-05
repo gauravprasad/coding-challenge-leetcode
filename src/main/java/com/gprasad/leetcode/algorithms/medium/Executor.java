@@ -1,6 +1,7 @@
 package com.gprasad.leetcode.algorithms.medium;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class Executor {
@@ -37,7 +38,10 @@ public class Executor {
         printMatrix(t2);*/
 
         //System.out.println(new PermutationInString().checkInclusion("ab", "eidbaooo"));
-        System.out.println(new KDiffPairsInAnArray().findPairs(new int[]{3,1,4,1,5}, 2));
+        //System.out.println(new KDiffPairsInAnArray().findPairs(new int[]{3,1,4,1,5}, 2));
+        //ListNode head = new RemoveNthNodeFromEndOfList().removeNthFromEnd(getNode(),1);
+
+        System.out.println(new LongestSubstringWithAtMostKDistinctCharacters().lengthOfLongestSubstringKDistinct("abaccc",2));
     }
 
     private static void printMatrix(int[][] matrix) {
@@ -47,5 +51,10 @@ public class Executor {
             }
             System.out.println("|");
         }
+    }
+
+    private static ListNode getNode(){
+        return new ListNode(1, new ListNode(2,new ListNode(3,new ListNode(4))));
+        //return new ListNode(1);
     }
 }

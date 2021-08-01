@@ -9,7 +9,10 @@ public class Executor {
         /*System.out.println(new JumpGame().canJump(new int[]{3,2,1,0,4}));
         System.out.println(new JumpGame().canJump(new int[]{1}));
         System.out.println(new JumpGame().canJump(new int[]{2,3,1,1,4}));*/
-        System.out.println(new JumpGame().canJump(new int[]{2,0}));
+        //System.out.println(new JumpGame().canJump(new int[]{2,0}));
+//        System.out.println(new MultiplyStrings().multiply("123","456"));
+        System.out.println(new LongestSubstringWithAtMostTwoDistinctCharacters().lengthOfLongestSubstringTwoDistinct("eceba"));
+        System.out.println(new LongestSubstringWithAtMostTwoDistinctCharacters().lengthOfLongestSubstringTwoDistinct("ccaabbb"));
     }
 }
 

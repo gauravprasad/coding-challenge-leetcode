@@ -1,5 +1,8 @@
-package com.gprasad.leetcode.algorithms.easy;
+package com.gprasad.leetcode.algorithms.hard;
 
+/*
+   Definition for a binary tree node.
+ */
 public class TreeNode {
     int val;
     TreeNode left;

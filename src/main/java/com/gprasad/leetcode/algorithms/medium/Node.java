@@ -8,6 +8,9 @@ public class Node {
     public Node prev;
     public Node next;
     public Node child;
+    public Node left;
+    public Node right;
+    public Node parent;
     public List<Node> neighbors;
 
     public Node() {
@@ -30,5 +33,12 @@ public class Node {
     public Node(int _val, ArrayList<Node> _neighbors) {
         val = _val;
         neighbors = _neighbors;
+    }
+
+    public Node(Node left, Node right, Node parent, int val) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+        this.parent = parent;
     }
 }

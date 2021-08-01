@@ -41,7 +41,21 @@ public class Executor {
         //System.out.println(new KDiffPairsInAnArray().findPairs(new int[]{3,1,4,1,5}, 2));
         //ListNode head = new RemoveNthNodeFromEndOfList().removeNthFromEnd(getNode(),1);
 
-        System.out.println(new LongestSubstringWithAtMostKDistinctCharacters().lengthOfLongestSubstringKDistinct("abaccc",2));
+        //System.out.println(new LongestSubstringWithAtMostKDistinctCharacters().lengthOfLongestSubstringKDistinct("abaccc",2));
+        //System.out.println(new PalindromicSubstrings().countSubstrings("abc"));
+        //System.out.println(new PalindromicSubstrings().countSubstrings("aaa"));
+
+        /*System.out.println(new StringCompression().compress(new char[]{'a','b','b','b','b','b','b','b','b','b','b','b','b','b','b','b','b','b','b','b','b','b','b','b'}));
+        System.out.println(new StringCompression().compress(new char[]{'a'}));
+        System.out.println(new StringCompression().compress(new char[]{'a','b','c','c'}));
+        System.out.println(new StringCompression().compress(new char[]{'a','a','b','b','c','c','c'}));*/
+
+        //System.out.println(new DivideTwoIntegers().divide(-2147483648, -1));
+       /* int[] x = {4,2,3,1};
+        int[] result  = new BuildingsWithAnOceanView().findBuildings(x);
+        System.out.println(Arrays.stream(result).boxed().collect(Collectors.toList()));*/
+
+
     }
 
     private static void printMatrix(int[][] matrix) {
@@ -57,4 +71,6 @@ public class Executor {
         return new ListNode(1, new ListNode(2,new ListNode(3,new ListNode(4))));
         //return new ListNode(1);
     }
+
+
 }

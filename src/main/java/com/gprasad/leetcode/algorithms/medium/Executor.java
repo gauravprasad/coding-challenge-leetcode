@@ -54,7 +54,9 @@ public class Executor {
        /* int[] x = {4,2,3,1};
         int[] result  = new BuildingsWithAnOceanView().findBuildings(x);
         System.out.println(Arrays.stream(result).boxed().collect(Collectors.toList()));*/
-
+        System.out.println(new MinimumRemoveToMakeValidParentheses().minRemoveToMakeValid("lee(t(c)o)de)"));
+        System.out.println(new MinimumRemoveToMakeValidParentheses().minRemoveToMakeValid("a)b(c)d"));
+        System.out.println(new MinimumRemoveToMakeValidParentheses().minRemoveToMakeValid("))(("));
 
     }
 

@@ -25,3 +25,84 @@ public class RemoveNthNodeFromEndOfList {
         return head;
     }
 }
+class Solutionzzzz {
+    class Index
+    {
+        int value = 0;
+        boolean temp = false;
+
+    }
+
+
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        Index idx = new Index();
+        ListNode temp = function(head, n, idx);
+        return temp;
+
+
+    }
+    public ListNode function(ListNode insidehead, int n, Index idx)
+    {
+        if(insidehead == null) return null;
+        ListNode inside = function(insidehead.next, n, idx);
+        idx.value = idx.value + 1;
+        if(idx.value == n)
+        {
+            idx.temp = true;
+            return inside;
+
+        }
+        if(idx.temp)
+        {
+            insidehead.next = inside;
+
+        }
+        return insidehead;
+
+
+
+    }
+}
+/*
+public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode p1=head;
+        int len=0;
+        while(p1!=null){
+            len++;
+            p1=p1.next;
+        }
+        int diff = len-n;
+        ListNode p2=head;
+        if (diff ==0){
+            //remove head
+            head=head.next;
+            return head;
+        }
+        while (diff >1){
+             p2 = p2.next;
+            diff--;
+        }
+        p2.next=p2.next.next;
+        return head;
+
+
+    }
+* */
+
+/*
+public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode dummy = new ListNode();
+        dummy.next = head;
+        ListNode first = dummy;
+        ListNode second = dummy;
+        for (int i = 0; i <= n; i++) {
+            first = first.next;
+        }
+        while (first != null) {
+            first = first.next;
+            second = second.next;
+        }
+        second.next = second.next.next;
+        return dummy.next;
+    }
+ */
